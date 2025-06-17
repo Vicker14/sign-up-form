@@ -25,6 +25,14 @@ body {
 
 #left-container {
     width: var(--left-container-size);
+    background-color: #40534C;
+}
+
+div#left-container img {
+    width: 100%;
+    height: 100%;
+    
+    object-fit: cover;
 }
 
 #right-container{
@@ -33,7 +41,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
 }
 
 #sign-up-form {
@@ -41,5 +48,4 @@ body {
     color: #66635D;
 
     padding: 2em;
-    
 }
