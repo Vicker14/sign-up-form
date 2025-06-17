@@ -1,9 +1,45 @@
 /* Actual CSS */
 @import url(satoshi.css);
 
+:root {
+    --right-container-size: 60vw;
+    --left-container-size: calc(100vw - var(--right-container-size));
+}
+
 body {
+    /* Reset values */
+    margin: 0;
+    border: 0;
+    padding: 0;
+
+    /* Actual values */
+
     background-color: #161616;
     color: #FFF8E8;
     font-family: Satoshi-medium;
+    
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
 }
 
+#left-container {
+    width: var(--left-container-size);
+}
+
+#right-container{
+    width: var(--right-container-size);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+#sign-up-form {
+    background-color: #FFF8E8;
+    color: #66635D;
+
+    padding: 2em;
+    
+}
