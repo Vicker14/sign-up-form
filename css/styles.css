@@ -1,0 +1,9 @@
+/* Actual CSS */
+@import url(satoshi.css);
+
+body {
+    background-color: #161616;
+    color: #FFF8E8;
+    font-family: Satoshi-medium;
+}
+
