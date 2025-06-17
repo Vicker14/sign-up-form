@@ -22,4 +22,4 @@ Clone the repository and open `index.html` in your browser to view the sign-up f
 
 ![Sign-Up Form Preview](./preview.png)
 
-[View Live Preview on GitHub Pages](https://your-github-username.github.io/sign-up-form/)
+[View Live Preview on GitHub Pages](https://vicker14.github.io/sign-up-form/)
