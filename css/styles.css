@@ -156,3 +156,7 @@ button:hover {
     margin-left: calc(var(--right-container-left-space) - 1em);
     margin-top: 2em;
 }
+
+[type]:invalid {
+    border-color: red;
+}
