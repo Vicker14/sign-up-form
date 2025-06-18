@@ -20,6 +20,6 @@ This project is a simple sign-up form webpage built to demonstrate form creation
 Clone the repository and open `index.html` in your browser to view the sign-up form.
 ## Preview
 
-![Sign-Up Form Preview](./preview.png)
+![Sign-Up Form Preview](img/web-preview.png)
 
 [View Live Preview on GitHub Pages](https://vicker14.github.io/sign-up-form/)
