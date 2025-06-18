@@ -16,6 +16,11 @@ a {
     color: inherit;
 }
 
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
 body {
     /* Reset values */
     margin: 0;
@@ -94,7 +99,7 @@ fieldset#log-in-credentials::before{
     margin-bottom: 0.2em;
 }
 
-#inputs-container {
+.inputs-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -159,4 +164,8 @@ button:hover {
 
 [type]:invalid {
     border-color: red;
+}
+
+::placeholder {
+    color: #aFa898;
 }
