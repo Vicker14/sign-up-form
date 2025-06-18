@@ -4,6 +4,9 @@
 :root {
     --right-container-size: 60vw;
     --left-container-size: calc(100vw - var(--right-container-size));
+
+    --fieldset-font-size: 2em;
+    --fieldset-font-weight: bold;
 }
 
 body {
@@ -47,5 +50,71 @@ div#left-container img {
     background-color: #FFF8E8;
     color: #66635D;
 
-    padding: 2em;
+    padding: 2em 4em;
+    padding-right: 0;
+}
+
+form {
+    width: clamp(250px, 90%, 500px);
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset:first-child {
+    margin-bottom: 1em;
+}
+
+fieldset#personal-info::before{
+    content: "Personal information";
+    font-size: var(--fieldset-font-size);
+    font-weight: var(--fieldset-font-weight);
+
+    margin-bottom: 0.2em;
+}
+
+fieldset#log-in-credentials::before{
+    content: "Log in Credentials";
+    font-size: var(--fieldset-font-size);
+    font-weight: var(--fieldset-font-weight);
+
+    margin-bottom: 0.2em;
+}
+
+#inputs-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width: max(inherit, 500px);
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+
+    width: max(100px, 200px);
+    margin-right: 1em;
+    margin-bottom: 0.5em;
+}
+
+input {
+    height: 1.5em;
+
+    padding-left: 0.5em;
+
+    background-color: #FFF8E8;
+    color: #66635D;
+    border: #E0DACC solid 0.2em;
+    border-radius: 0.5em;
+}
+
+label {
+    padding-left: 0.3em;
 }

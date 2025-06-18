@@ -9,12 +9,51 @@
 </head>
 
 <body>
+    <!-- LEFT CONTAINER CODE -->
     <div id="left-container">
         <img src="img/forest.jpg" alt="foret-image">
     </div>
+
+    <!-- RIGHT CONTAINER CODE -->
     <div id="right-container">
         <div id="sign-up-form">
-            Sign-up form
+            <form>
+
+                <fieldset id="personal-info">
+                    <div id="inputs-container">
+                        <div class="inputs">
+                            <label for="first-name">First name</label>
+                            <input type="text" name="first-name">
+                        </div>
+                        <div class="inputs">
+                            <label for="last-name">Last name</label>
+                            <input type="text" name="last-name">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset id="log-in-credentials">
+                    <div id="inputs-container">
+                        <div class="inputs">
+                            <label for="">Email</label>
+                            <input type="email" name="email">
+                        </div>
+                        <div class="inputs">
+                            <label for="phone">Phone number</label>
+                            <input type="number" name="phone">
+                        </div>
+                        <div class="inputs">
+                            <label for="password">Password</label>
+                            <input type="password" name="password">
+                        </div>
+                        <div class="inputs">
+                            <label for="password-repeat">Repeat password</label>
+                            <input type="password" name="password-repeat">
+                        </div>
+                    </div>
+                </fieldset>
+
+            </form>
         </div>
     </div>
 </body>
