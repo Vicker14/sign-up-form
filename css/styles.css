@@ -5,6 +5,8 @@
     --right-container-size: 60vw;
     --left-container-size: calc(100vw - var(--right-container-size));
 
+    --right-container-left-space: 4em;
+
     --fieldset-font-size: 2em;
     --fieldset-font-weight: bold;
 }
@@ -50,7 +52,7 @@ div#left-container img {
     background-color: #FFF8E8;
     color: #66635D;
 
-    padding: 2em 4em;
+    padding: 2em var(--right-container-left-space);
     padding-right: 0;
 }
 
@@ -117,4 +119,35 @@ input {
 
 label {
     padding-left: 0.3em;
+}
+
+button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: inherit;
+
+    padding: 1.3em;
+    border-radius: 1em;
+
+    background-color: #66635D;
+    color: #FFF8E8;
+
+    font-weight: var(--fieldset-font-weight);
+}
+
+button:first-child {
+        margin-right: 1.5em;
+}
+
+button:hover {
+    background-color: #46433D;
+    color: #c0bAaC;
+    cursor: pointer;
+}
+
+#submit-buttons {
+    display: flex;
+    margin-left: calc(var(--right-container-left-space) - 1em);
+    margin-top: 2em;
 }

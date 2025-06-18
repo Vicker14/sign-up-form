@@ -16,8 +16,11 @@
 
     <!-- RIGHT CONTAINER CODE -->
     <div id="right-container">
+
+        <h1 style="margin: 0.5em 1.5em;">Welcome!</h1>
+
         <div id="sign-up-form">
-            <form>
+            <form id="create-account">
 
                 <fieldset id="personal-info">
                     <div id="inputs-container">
@@ -35,7 +38,7 @@
                 <fieldset id="log-in-credentials">
                     <div id="inputs-container">
                         <div class="inputs">
-                            <label for="">Email</label>
+                            <label for="email">Email</label>
                             <input type="email" name="email">
                         </div>
                         <div class="inputs">
@@ -55,6 +58,12 @@
 
             </form>
         </div>
+
+        <div id="submit-buttons">
+            <button type="submit" form="create-account">Create account</button>
+            <button type="reset" form="create-account">Clear</button>
+        </div>
+        
     </div>
 </body>
 
